@@ -1,18 +1,12 @@
+% this data is age and height for a group of kids
+% we will see how this data is related and fit a model to it
+
 clear;clc;
 
-data1 = load('ex1data1.txt');
-X1 = data1(:,1);
-y1 = data1(:,2);
-
-data2 = load('ex1data2.txt');
-X2 = data2(:,1:2);
-y2 = data2(:,3);
-
-%plot(X,y,'o');
+x = load('ex2x.dat');
+y = load('ex2y.dat');
 
 n1 = length(X1(1,:)) + 1;
-n2 = length(X2(1,:)) + 1;
-X1 = [ones(length(y1), 1), X1];
 X2 = [ones(length(y2), 1), X2];
 
 X22 = X2(:,2);
